@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 echo "<html><body>"
 echo "<h1>Mein Webserver</h1>"
