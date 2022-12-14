@@ -1,6 +1,11 @@
 #!/bin/bash
 htmloutput=/opt/iotproject/index.html
-DIRECTORYTOLIST=/tmp
+DIRECTORYTOLIST=$1
+
+$2=marzipan
+$3=/tmp
+
+
 echo "<html><body>" 1> $htmloutput
 echo "<h1>Mein Webserver</h1>" 1>> $htmloutput
 echo "Date: $(date +%H:%M:%S)" 1>> $htmloutput
