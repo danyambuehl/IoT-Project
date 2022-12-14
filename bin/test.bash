@@ -1,8 +1,16 @@
 #!/bin/bash
 
+DIRECTORYTOLIST=/tmp # this is the default
+
 if [ $# -eq 1 ]
 then
-    echo "condition is true"
-else
-    echo "condition is false"
+    if [ -d "$1" ] 
+    then
+        DIRECTORYTOLIST=$1
+    else
+        echo "Directory $1 not found."
+        exit 52
+    fi
 fi
+
+ls DIRECTORYTOLIST
