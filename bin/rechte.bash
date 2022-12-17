@@ -1,6 +1,7 @@
 #!/bin/bash
 INTERVAL=30
 while true 
+do
 for what in /opt/iotproject/bin/*.bash
 	do 
 	# echo $what
