@@ -1,8 +1,7 @@
-#!/bin/bash
 
 DIRECTORYTOLIST=/tmp # this is the default
 
-if [ $# -eq 1 ]
+if [ $# -ge 1 ]
 then
     if [ -d "$1" ] 
     then
@@ -12,7 +11,6 @@ then
         exit 52
     fi
 fi
+shift 
 
 ls $DIRECTORYTOLIST
-shift 
-cat $* >> test.html
