@@ -2,7 +2,7 @@
 
 TEMPLATEHTMLFILE=/opt/iotproject/etc/index.html.template 
 INTERVAL=20
-HTMLOUTPUT=/opt/iotproject/index.html
+HTMLOUTPUT=/var/www/html/index.html
 
 counter=0
 mosquitto_sub -h localhost -t '#' -F "%t %p" | while read topic payload ; do 

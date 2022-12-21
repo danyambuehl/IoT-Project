@@ -1,0 +1,9 @@
+[Unit]
+Description=IOT Service
+
+[Service]
+Type=simple
+ExecStart=/opt/iotproject/bin/webservice.bash
+
+[Install]
+WantedBy=multi-user.target
